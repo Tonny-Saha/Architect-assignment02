@@ -115,6 +115,60 @@ body{
         color: var(--orange);
         font-weight: 600;
     }
+
+    /* Team Section done */
+
+    /* Features Section Start */
+    .features-section{
+        display: flex;
+        gap:50px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 100px;
+        width: 70%;
+    }
+    .features-content h2{
+        border-left: 3px solid var(--orange);
+        padding-left: 10px;
+    }
+    .features-image img{
+        height: 662px ;
+        width: 500px;
+    }
+    .para{
+        color: #727272;
+        font-size: 12px;
+        margin-top: -15px;
+    }   
+    .content_box{
+        height: 100px;
+        width: 350px;
+        /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .1); */
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        /* border: 1px solid var(--dark04); */
+        border-radius: 8px;
+        padding: 2px 10px 10px;
+        margin-bottom: 5px;
+    } 
+    .button button{
+        height: 100px;
+        width: 200px;
+        border-radius: 5px;
+        background-color: #FF900E;
+        color: white;
+        border: none;
+        position: absolute;
+        left: 550px;
+        top: 360%;
+        /* bottom: 800px; */
+    }
+    .button button span{
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+
 /* Media Queries */
 
 /* For Mobile */
@@ -170,4 +224,36 @@ body{
     .team-image{
         justify-content: center;
     }
+
+    /* Team Section done */
+
+    /* Features Section start */
+    .features-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .features-image img{
+        height: 330px;
+        width: 250px;
+        margin: 0 auto;
+    }
+    .button button{
+        height: 80px;
+        width: 150px;
+        border-radius: 5px;
+        background-color: #FF900E;
+        color: white;
+        border: none;
+        position: absolute;
+        left: 150px;
+        top: 305%;
+        /* bottom: 800px; */
+    }
+    .button button span{
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+
 }
