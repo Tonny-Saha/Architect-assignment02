@@ -14,7 +14,8 @@ body{
 }
 /* Banner section start */
 .banner-section{
-    min-height: 1000px;
+    min-height: 800px;
+    width: 100%;
     background-color: rgba(255, 144, 14, .1);
     padding: 10px;
 }
@@ -51,9 +52,9 @@ body{
     display: flex;
     justify-content: center;
 }
-.content-section .btn button{
-    height: 50px;
-    width: 180px;
+ .btn button{
+    height: 40px;
+    width: 150px;
     color: white;
     background-color: var(--orange);
     border: none;
@@ -74,17 +75,46 @@ body{
 /* Banner Section End */
 
 /* Team Section Start */
-.team-img{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 10%;
-}
-.team-img img{
-    height: 342px;
-    width: 342px;
-}
+    .team-image{
+        width: 20%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 50px;
+    }
+    .team-image img{
+        height: 200px;
+        width: 200px;
+    }
 
+    .team-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        margin-left: 300px;
+    }
+    .team-section .team-content-para{
+        width: 70%;
+        font-size: 12px;
+        color: var(--dark03);
+    }
+    .team-content{
+        margin-left: 250px;
+    }
+    .team-content-header h2{
+        color: var(--dark03);
+        font-weight: 400;
+        font-size: 35px;
+    }
+    .team-content-header .of-our{
+        color: black;
+        font-weight: 600;
+    }
+    .team-content-header .features{
+        color: var(--orange);
+        font-weight: 600;
+    }
 /* Media Queries */
 
 /* For Mobile */
@@ -92,6 +122,7 @@ body{
     /* Banner Section Start */
     .banner-section{
         width: 100%;
+        background-color: rgba(255, 144, 14, .1);
     }
     .nav, .anchor-link{
       flex-direction: column;
@@ -106,7 +137,7 @@ body{
         font-size:30px;
         margin-top: 30px;
     }
-    .content-section .btn button{
+    .btn button{
         height: 40px;
         width: 120px;
         font-size: 12px;
@@ -120,6 +151,23 @@ body{
     .banner-img img{
         width: 410px ;
         height: 200px;
+        margin: 0 auto;
     }
     /* Banner Section End */
+
+    /* Team Section Start */
+    .team-section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-self: start;
+        /* margin-left: 300px; */
+        /* margin-right: 30px; */
+    }
+    .team-content{
+        margin-left: -100px;
+    }
+    .team-image{
+        justify-content: center;
+    }
 }
