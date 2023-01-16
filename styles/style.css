@@ -1,0 +1,125 @@
+/* Font awesome link */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap');
+:root {
+    --orange: #FF900E;
+    --dark02: #424242;
+    --dark03: #727272;
+    --dark04: #A1A1A1;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+/* Banner section start */
+.banner-section{
+    min-height: 1000px;
+    background-color: rgba(255, 144, 14, .1);
+    padding: 10px;
+}
+.nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.anchor-link{
+    display: flex;
+    gap: 26px;
+    color: #424242;
+    font-size: 16px;
+    font-weight:400;
+}
+.content-section{
+    width: 600px;
+    height: 225px;
+    margin: 0 auto;
+}
+
+.content-section .content-header h1{
+    margin: 0 auto;
+    margin-top: 180px;
+    text-align: center;
+    font-size: 60px;
+}
+.content-section .content-para{
+    font-size: 12px;
+    text-align: center;
+}
+.content-section .btn{
+    display: flex;
+    justify-content: center;
+}
+.content-section .btn button{
+    height: 50px;
+    width: 180px;
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 8px;
+    margin-top: 32px;
+}
+.banner-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.banner-img img{
+    width: 820px ;
+    height: 400px;
+    border-radius: 8px;
+}
+
+/* Banner Section End */
+
+/* Team Section Start */
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 10%;
+}
+.team-img img{
+    height: 342px;
+    width: 342px;
+}
+
+/* Media Queries */
+
+/* For Mobile */
+@media only screen and (max-width:688px) {
+    /* Banner Section Start */
+    .banner-section{
+        width: 100%;
+    }
+    .nav, .anchor-link{
+      flex-direction: column;
+      align-items:flex-start;
+      font-size: 12px;
+      gap: 10px;
+    }
+    .content-section{
+        width: 400px;
+    }
+    .content-section .content-header h1{
+        font-size:30px;
+        margin-top: 30px;
+    }
+    .content-section .btn button{
+        height: 40px;
+        width: 120px;
+        font-size: 12px;
+    }
+    .banner-img{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .banner-img img{
+        width: 410px ;
+        height: 200px;
+    }
+    /* Banner Section End */
+}
