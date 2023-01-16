@@ -330,10 +330,15 @@ footer p{
         /* margin-right: 30px; */
     }
     .team-content{
-        margin-left: -100px;
+        margin-left: -200px;
     }
     .team-image{
-        justify-content: center;
+        justify-content:flex-end;
+
+    }
+    .team-image img{
+        width: 100px;
+        height: 100px;
     }
 
     /* Team Section done */
@@ -348,10 +353,12 @@ footer p{
         width: 200px
     }
     .content_box{
-        width: 150px;
+        width: 250px;
     }
      .para{
+        margin-top: 20px;
         font-size: 8px;
+        margin-bottom: 20px;
     }
     .features-image img{
         height: 330px;
